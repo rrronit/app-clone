@@ -10,4 +10,8 @@ export const exampleRouter = createTRPCRouter({
         greeting: `Hello ${input.text}`,
       };
     }),
+    check:publicProcedure
+    .query(()=> {
+      return "hi";
+    })
 });
